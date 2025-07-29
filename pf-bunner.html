@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KYOKO ITO Portfolio Website</title>
+<meta name="description" content="伊藤京子のPortfolio用のWEBサイトです">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+<link href="css/normalize.css" rel="stylesheet" type="text/css">	
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dva1mxs',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	
+</head>
+
+<body>
+<div class="container">
+<header class="menubar">
+<span class="nav_toggle">
+    <i></i>
+    <i></i>
+    <i></i>
+</span>
+	<div class="nav">
+	<div id="nav-content">
+		<h1><span class="h1-text">
+		<a href="index.html#top">
+		Kyoko<br>
+		Portfolio<br>
+		Site</a></span></h1>
+		<nav>
+			<ul class="nav_menu_ul">
+			<li><a href="index.html#top">TOP</a></li>
+			<li><a href="index.html#me">About Me</a></li>
+			<li><a href="index.html#history">History</a></li>
+			<li><a href="index.html#skill">Skills</a></li>
+			<li><a href="index.html#portforio">Work</a></li>	
+			</ul>
+		</nav>
+			<small>※このサイトは、ポートフォリオ用サイトです。<br>
+				個人で制作したもののみ掲載しています。</small>
+  </div>
+		</div>
+
+</header>
+	<div class="main">	
+		<div ID="title">
+<h1><span>Kyoko<br> Portfolio Site</span></h1>
+</div>
+		<h2 class="pf-h2"><span>バナー制作</span></h2>
+		
+		<div class="setumei">
+		<div class="setumei-wrapper">
+		<p class="setumei-bun2">
+		テーマを決めて架空のWebサイトのバナーを作成。バナーを作成する際は、何の情報を特に伝えたいか・見ている人に何に注目してもらいたいかを考えたうえで、デザインや色を決めて作成しています。今後も随時追加予定。
+		</p>
+			</div>
+					</div>
+<!--
+		<ul>
+			<li class="sagyou-midashi"><strong>主な作業</strong></li>
+		  <li>●HTML/CSS コーディング</li>
+		  <li>●Webサイトデザイン</li>
+		  <li>●レスポンシブル対応</li>
+		  <li>●イラスト作成</li>
+          <li>●写真撮影・補正</li>
+		</ul>
+
+			
+
+-->			
+	<div class="capture">
+	<h3>お花屋さんのプレゼントキャンペーン</h3>
+	<div class="banner">
+		<img  src="images/Fbanner.jpg" alt="花屋のキャンペーンバナー１"/>
+		<img  src="images/Fbanner3.jpg" alt="花屋のキャンペーンバナー２"/>
+		</div>
+		
+	<h3>ペット関連のバナー</h3>	
+	<div class="banner">
+	<img  src="images/pet.jpg" alt="ペット旅行のバナー"/>
+	<img  src="images/pet2.jpg" alt="ペット保険のバナー" />
+
+		</div>
+	</div>
+	</div>
+		
+</div>
+	<footer>
+	© Kyoko Ito All Rights Reserved.
+	</footer>
+
+<p class="pagetop" style="display: block;">
+<a href="#">
+<img src="images/icon_top.png" alt=""/>
+
+</a>
+</p>
+	
+<script>
+$(window).scroll(function () {
+  var now = $(window).scrollTop();
+  if (now > 200) {
+    $('.pagetop').fadeIn("slow");
+  } else {
+    $('.pagetop').fadeOut('slow');
+  }
+});	
+</script>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$(function(){
+$('.nav_toggle').on('click', function () {
+    $('.nav_toggle, .nav').toggleClass('show');
+});
+$('ul li a').on('click', function () {
+    $('.nav_toggle, .nav').removeClass('show');
+});
+})
+</script>
+
+
+	
+</body>
+</html>
